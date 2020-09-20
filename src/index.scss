@@ -1,0 +1,14 @@
+@use './constants.scss';
+
+
+/* ==UserStyle==
+@name           Webcampus Dark Theme
+@namespace      github.com/martin-danhier
+@version        #{constants.$version}
+@description    Dark theme for Webcampus
+@author         Martin Danhier
+==/UserStyle==*/
+
+@-moz-document domain('webcampus.unamur.be'), domain('auth.unamur.be') {
+    @import 'webcampus/index.scss';
+}

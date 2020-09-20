@@ -1,0 +1,85 @@
+@use '../constants.scss';
+
+// Create a new navbar
+.navbar-receptic {
+    top: 0;
+    background: unset;
+    background-color: constants.$navbar-color;
+    box-shadow: 0px 1px constants.$shadow-color;
+
+    // Drawer toggle button
+    [data-region="drawer-toggle"] {
+        .btn-secondary,
+        .btn-secondary:active,
+        .btn-secondary:active:focus {
+            background-color: unset;
+            border: none;
+            box-shadow: none;
+            outline: none;
+        }
+    }
+
+    // Dropdown menu
+    a.dropdown-item {
+        color: #d2d4d7;
+    }
+    a.dropdown-item:hover,
+    a.dropdown-item:focus:hover {
+        background-color: #424040;
+        color: constants.$text-color;
+    }
+    a.dropdown-item:focus {
+        background-color: unset;
+        color: #d2d4d7;
+    }
+}
+
+// New title
+ul.navbar-nav.d-none.d-md-flex::after {
+    content: "Webcampus";
+    font-size: 18px;
+}
+
+// Resize banner to fit the new one
+header.fixed-top.brand-banner {
+    visibility: visible;
+
+    width: 100px;
+    z-index: 2000;
+    left: 70px;
+    height: 50px;
+    background: unset;
+
+    // Remove right logo
+    .right-logo {
+        visibility: hidden;
+    }
+
+    // Move left logo under new title to allow click
+    .left-logo {
+        left: 0px;
+        width: 100px;
+        height: 30px;
+        box-shadow: unset;
+        top: 10px;
+
+        // Hide img
+        img {
+            visibility: hidden;
+        }
+    }
+}
+
+// Move everything up
+#blocks-column-toggle {
+    top: 0px;
+    margin-top: 75px;
+}
+
+#page,
+#nav-drawer,
+#blocks-column,
+.message-app.drawer {
+    top: 0px;
+    margin-top: 60px !important;
+}

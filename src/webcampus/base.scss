@@ -1,0 +1,46 @@
+@use '../constants.scss';
+
+body {
+    color: constants.$text-color;
+    background-color: constants.$background-color;
+}
+
+// Main part
+
+#region-main {
+    background-color: constants.$block-background-color;
+    
+    border-radius: 15px;
+    border: unset;
+}
+
+// Clean page-header (top of home page with logo)
+
+#page-header {
+    visibility: visible;
+
+    .card {
+        background-color: constants.$block-background-color;
+        box-shadow: unset;
+        border-radius: 15px;
+        border: unset;
+    }
+
+    .mr-auto,
+    .mx-auto {
+        margin: 0 !important;
+        margin-right: 0 !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    // Replace logo
+    .logo img[alt="WebCampus"] {
+        content: url(http://drive.google.com/uc?id=1eIYldsdNtWjG7NG6tRgD150Xe9xdUWPt);
+        max-height: 130px;
+        vertical-align: middle;
+    }
+}
+
