@@ -8,21 +8,15 @@
 @-moz-document domain("webcampus.unamur.be"),
 domain("auth.unamur.be") {
 
-
-    /* Main colors */
-    body {}
-
-
-
     /* ul.navbar-nav.d-none.d-md-flex::after {
         content: "Webcampus";
         font-size: 18px;
     } */
 
-    #blocks-column-toggle {
+    /* #blocks-column-toggle {
         top: 0px;
         margin-top: 75px;
-    }
+    } */
 
     /* #page,
     #nav-drawer,
@@ -54,12 +48,12 @@ domain("auth.unamur.be") {
         vertical-align: middle;
     }
 
-    .path-my #region-main .card-body.pr-1.course-info-container {
+    /* .path-my #region-main .card-body.pr-1.course-info-container {
         border-radius: 0px;
-    }
+    } */
 
 
-    #page-wrapper #page-footer {
+    /* #page-wrapper #page-footer {
         border-radius: 15px;
         margin-left: 10px;
         margin-right: 10px;
@@ -74,7 +68,7 @@ domain("auth.unamur.be") {
         white-space: pre;
         text-align: center;
         color: #e7e7e7;
-    }
+    } */
 
     /* #page-header {
         visibility: visible;
@@ -87,57 +81,57 @@ domain("auth.unamur.be") {
         border: unset;
     } */
 
-    #region-main {
+    /* #region-main {
         background-color: #1b1b1b;
 
         border-radius: 15px;
         border: unset;
-    }
-    h2 {
+    } */
+    /* h2 {
         color: #fff;
-    }
-    #page-my-index {
+    } */
+    /* #page-my-index {
         background-color: #171717 !important;
-    }
-    .list-group-item {
+    } */
+    /* .list-group-item {
         background-color: #262626;
         box-shadow: 0.5px 0.5px #393535;
         border: unset;
         color: #737373;
-    }
+    } */
 
 
-    #region-main .list-group-item {
+    /* #region-main .list-group-item {
 
         border-radius: 15px;
-    }
-    .bg-dark {
+    } */
+    /* .bg-dark {
         background-color: #151414 !important;
-    }
-    a {
+    } */
+    /* a {
         color: #1cc9ca;
-    }
+    } */
     /* body {
         background-color: #171717;
         color: #fbfbfb;
     } */
-    .card {
+    /* .card {
         background-color: #171717;
         border-color: #4f4f4f;
-    }
-    #region-main .card-body {
+    } */
+    /* #region-main .card-body {
 
         border-radius: 15px;
-    }
+    } */
 
     .mediaserver-iframe {
         border-radius: 15px;
         user-select: none;
     }
 
-    .region_main_settings_menu_proxy {
+    /* .region_main_settings_menu_proxy {
         background-color: inherit;
-    }
+    } */
 
     /* forum */
     .path-course-view .activityinstance .unread {
@@ -301,7 +295,7 @@ domain("auth.unamur.be") {
 
 
     /* editor */
-    .editor_atto_wrap {
+    /* .editor_atto_wrap {
         border: 1px solid #8a8686;
         border-radius: 15px;
     }
@@ -366,7 +360,7 @@ domain("auth.unamur.be") {
 
     .editor_atto .atto_clear_button_removeFormat {
         /*         padding: 0px 9px; */
-        vertical-align: middle;
+   /*     vertical-align: middle;
         margin: 0px;
     }
 
@@ -496,7 +490,7 @@ domain("auth.unamur.be") {
 
     .cm-s-default .cm-property {
         color: #DCDCAA;
-    }
+    } */
 
     /* text field */
     .form-control {
@@ -678,7 +672,7 @@ domain("auth.unamur.be") {
         border-bottom: unset !important;
         text-align: center;
     }
-
+/* 
     .block-region .card-body {
         border-radius: 15px;
     }
@@ -695,7 +689,7 @@ domain("auth.unamur.be") {
     .block-region .block .card-body {
         background-color: #201f1f;
         box-shadow: 1px 1px 2px 0 #2b2929;
-    }
+    } */
 
     .block_timeline .list-group-item {
         border-radius: 10px;
@@ -849,10 +843,10 @@ domain("auth.unamur.be") {
     }
 
     /* Fix weird white flash when the page is loading */
-    .bg-pulse-grey {
+    /* .bg-pulse-grey {
         animation: unset;
         background-color: #201f1f;
-    }
+    } */
 
     /* modal */
     .modal-content {
@@ -1244,7 +1238,7 @@ domain("auth.unamur.be") {
 
     /** ==================== */
     /* warning */
-    .flashbox {
+    /* .flashbox {
         background: #222;
             border-radius: 15px;
     }
@@ -1255,7 +1249,7 @@ domain("auth.unamur.be") {
     
     .flashbox.trick {
         border: 2px solid #ffff7b;
-    }
+    } */
 
     /* ================== */
     /* messaging app */
@@ -1272,10 +1266,10 @@ domain("auth.unamur.be") {
         background-color: #242424;
     }
 
-    .card-header {
+    /* .card-header {
         background-color: #1f1f1f;
         border-color: #4e4d4d;
-    }
+    } */
 
     .message-app.drawer .message.received {
         background-color: #262525 !important;
@@ -1300,39 +1294,39 @@ domain("auth.unamur.be") {
 
         border-bottom-color: #3b3a3a;
     }
-    .bg-secondary {
+    /* .bg-secondary {
         background-color: #3b3a3a !important;
-    }
+    } */
 
 
     /* background color */
-    .bg-light {
+    /* .bg-light {
         background-color: #191919 !important;
-    }
-    .border-bottom {
+    /* } 
+    /* .border-bottom {
         border-bottom: 1px solid transparent !important;
-    }
+    } */ 
     .message-app .text-center {
         background-color: inherit;
     }
-    .bg-white {
+    /* .bg-white {
         background-color: inherit !important;
-    }
+    } */
 
     /* nav drawer */
-    div::-webkit-scrollbar-thumb,
+    /* div::-webkit-scrollbar-thumb,
     section::-webkit-scrollbar-thumb,
     div::-webkit-scrollbar-track,
     section::-webkit-scrollbar-track {
         border-radius: 10px;
-    }
+    } */
 
 
-    #nav-drawer .list-group a.list-group-item.active {
+    /* #nav-drawer .list-group a.list-group-item.active {
         background-color: #1e4a51;
         border: 1px solid #1e4a51;
         border-radius: 15px;
-    }
+    } */
     /* .navbar-receptic [data-region="drawer-toggle"] .btn-secondary {
 
         background-color: #282828;
@@ -1356,30 +1350,30 @@ domain("auth.unamur.be") {
         background-color: #242424;
         box-shadow: 0px 1px #2e2c2c;
     } */
-    body.shrinkablenavdrawer #nav-drawer.closed {
+    /* body.shrinkablenavdrawer #nav-drawer.closed {
         background-color: #212020;
-    }
-    #nav-drawer {
+    } */
+    /* #nav-drawer {
         user-select: none;
         background-color: #212020;
         border-radius: 15px;
         height: calc(100vh - 70px);
         box-shadow: 1px 1px #242323;
-    }
-    #nav-drawer .list-group div.list-group-item,
+    } */
+    /* #nav-drawer .list-group div.list-group-item,
     #nav-drawer .list-group a.list-group-item {
         box-shadow: unset;
         background-color: #212020;
         border: 1px solid transparent;
         color: #c5c6c8;
-    }
-    #nav-drawer .list-group div.list-group-item:hover,
+    } */
+    /* #nav-drawer .list-group div.list-group-item:hover,
     #nav-drawer .list-group a.list-group-item:hover {
         border: 1px solid transparent;
         ;
         border-radius: 10px;
         background-color: #333030;
-    }
+    } */
     .que .outcome {
         background-color: #232323;
         border-radius: 15px;
@@ -1884,10 +1878,10 @@ domain("auth.unamur.be") {
     .overlay-icon-container {
         background-color: #201f1f;
     }
-    .list-group-item:hover {
+    /* .list-group-item:hover {
         background-color: #353535;
         color: #737373;
-    }
+    } */
     .fa-user-plus:before {
         color: #fff;
     }

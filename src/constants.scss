@@ -3,7 +3,68 @@ $version: "0.6.0";
 
 // Color scheme
 $background-color: #171717;
+$darker-background-color: #141414;
+$lighter-background-color: #3b3a3a;
 $text-color: #fbfbfb;
-$block-background-color: #1b1b1b;
-$navbar-color: #242424;
+$link-color: #1cc9ca;
 $shadow-color: #2e2c2c;
+$elevation-shadow-color: #2b2929;
+
+
+$dropdown-menu-hover-background-color: #424040;
+
+// Navbar settings
+$navbar-height: 50px;
+$navbar-color: #242424;
+
+// Block settings
+$block-background-color: #1b1b1b;
+$block-title-color: #67f917;
+$block-icon-color: #a6a5a5;
+
+// Card settings
+$card-background-color: #171717;
+$card-border-color: #4f4f4f;
+
+// Drawer
+$drawer-hover-color: #333030;
+
+// Course list
+$course-list-text-color: #838383;
+$course-list-background-color: #262626;
+$course-list-hover-background-color: #353535;
+
+// Flashbox
+$flashbox-warning-color: #d84d4d;
+$flashbox-trick-color: #ffff7b;
+
+// Editor Atto
+$atto-border-color: #8a8686;
+$atto-editor-bg-color: #1d1d1d;
+$atto-toolbar-bg-color: #262626;
+$atto-response-bg-color: #282828;
+$atto-group-border-color: #525252;
+$atto-disabled-button-color: #353535;
+$atto-hover-button-color: #525252;
+$atto-button-bg-color: #262525;
+$atto-button-border-color: #615e5e;
+$atto-notification-bg-color: #1e1e1e;
+
+// Code mirror
+$cmirror-cursor-color: #d4d4d4;
+$cmirror-text-color: #d4d4d4;
+$cmirror-bg-color: #1e1e1e;
+$cmirror-focused-selected-color: #264f78;
+$cmirror-selected-bg-color: #313d41;
+$cmirror-gutters-color: #303030;
+$cmirror-gutter-color: #1d1d1d;
+$cmirror-tag-color: #569cd6;
+$cmirror-comment-color: #608b4e;
+$cmirror-attribute-color: #9cdcfe;
+$cmirror-string-color: #ce9178;
+$cmirror-variable-color: #4ec9b8;
+$cmirror-property-color: #dcdcaa;
+
+
+// New icons
+$atto-remove-format-icon: url('https://api.iconify.design/ic:baseline-format-clear.svg?height=19');

@@ -1,0 +1,207 @@
+@use "../constants.scss";
+
+/* Editor ATTO */
+
+.editor_atto_wrap {
+    border: 1px solid constants.$atto-border-color;
+    border-radius: 15px;
+
+    .editor_atto {
+        .editor_atto_toolbar {
+            border-radius: 15px 15px 0px 0px;
+            background-color: constants.$atto-toolbar-bg-color;
+            border: unset;
+            border-bottom: 1px solid constants.$atto-border-color;
+
+            button[disabled] {
+                background-color: constants.$atto-disabled-button-color !important;
+            }
+
+            div.atto_group {
+                background-color: constants.$atto-toolbar-bg-color;
+            }
+
+            button:hover,
+            button:active,
+            button.highlight {
+                background-image: unset !important;
+                background-color: constants.$atto-hover-button-color !important;
+            }
+
+            button {
+                background-image: unset;
+                background-color: constants.$atto-button-bg-color !important;
+                border-color: constants.$atto-button-border-color !important;
+
+                i::before {
+                    color: #b0b0b0 !important;
+                }
+            }
+        }
+
+        .editor_atto_content.form-control {
+            border: unset;
+        }
+
+        .atto_group {
+            border-color: constants.$atto-group-border-color !important;
+        }
+
+        .atto_clear_button_removeFormat .icon::before {
+            content: constants.$atto-remove-format-icon;
+            vertical-align: -0.125em;
+            filter: invert(80%);
+        }
+
+        .atto_bsgrid_button_iconone {
+            vertical-align: middle;
+            padding-top: 1px;
+        }
+
+        .atto_clear_button_removeFormat {
+            vertical-align: middle;
+            margin: 0px;
+
+            .icon {
+                padding: 0;
+                margin-right: 2px;
+            }
+        }
+
+        .editor_atto_content_wrap {
+            background-color: constants.$atto-editor-bg-color;
+            color: unset;
+            border: unset;
+            border-radius: 0px 0px 15px 15px;
+        }
+    }
+}
+
+.que.essay {
+    div.qtype_essay_response textarea {
+        background-color: constants.$atto-editor-bg-color;
+    }
+
+    .qtype_essay_response.readonly {
+        background: constants.$atto-response-bg-color;
+        border-radius: 10px;
+        padding: 10px;
+        color: #c9c9c9;
+    }
+}
+
+.qtype_essay_editor.qtype_essay_response:not(.readonly)::after {
+    content: '⚠ Les couleurs du sélecteur de couleurs sont hardcodées. Pour revenir à la couleur par défaut, il y a un bouton "Supprimer le format".';
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+.editor_atto_menu {
+
+    > .dropdown-menu {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        height: 12em;
+    }
+    
+    .dropdown-menu {
+        display: grid;
+        width: 150px;
+        height: 100px;
+        grid-template-columns: repeat(3, 1fr);
+
+        .atto_menuentry {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        > li > a {
+            margin: 0px;
+
+            > div {
+                margin: auto;
+            }
+        }
+    }
+
+
+    .open.atto_fontcolor_button.atto_menu .dropdown-menu li {
+        display: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .open.atto_fontcolor_button.atto_menu .dropdown-menu li + li {
+        display: flex;
+    }
+}
+
+.open.atto_menu > .dropdown-menu {
+    display: grid;
+}
+
+.editor_atto_notification .atto_info {
+    background-color: constants.$atto-notification-bg-color;
+    margin-left: 20px;
+}
+
+/* Code mirror */
+
+.CodeMirror {
+    width: unset !important;
+    background: constants.$cmirror-bg-color;
+    color: constants.$cmirror-text-color;
+    border-radius: 0px 0px 15px 15px;
+    border-top: 0;
+    line-height: 1.2;
+    font-size: 12px;
+
+    div.CodeMirror-cursor {
+        color: constants.$cmirror-cursor-color;
+        border-color: constants.$cmirror-cursor-color;
+    }
+}
+
+.CodeMirror-focused .CodeMirror-selected {
+    background-color: constants.$cmirror-focused-selected-color;
+}
+
+.CodeMirror-selected {
+    background-color: constants.$cmirror-selected-bg-color;
+}
+
+.CodeMirror-gutters {
+    border-right: 1px solid constants.$cmirror-gutters-color;
+}
+
+.CodeMirror-gutter {
+    background: constants.$cmirror-gutter-color;
+    border: 0;
+}
+
+.cm-s-default {
+    .cm-tag {
+        color: constants.$cmirror-tag-color;
+    }
+
+    .cm-comment {
+        color: constants.$cmirror-comment-color;
+    }
+
+    .cm-attribute {
+        color: constants.$cmirror-attribute-color;
+    }
+
+    .cm-string {
+        color: constants.$cmirror-string-color;
+    }
+
+    .cm-variable {
+        color: constants.$cmirror-variable-color;
+    }
+
+    .cm-property {
+        color: constants.$cmirror-property-color;
+    }
+}

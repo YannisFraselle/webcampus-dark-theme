@@ -1,6 +1,7 @@
 @use '../constants.scss';
 
-body {
+body,
+#page-my-index {
     color: constants.$text-color;
     background-color: constants.$background-color;
 }
@@ -9,9 +10,37 @@ body {
 
 #region-main {
     background-color: constants.$block-background-color;
-    
+
     border-radius: 15px;
     border: unset;
+
+    .card-body {
+        border-radius: 15px;
+    }
+
+    .list-group-item {
+        border-radius: 15px;
+    }
+}
+
+.region_main_settings_menu_proxy {
+    background-color: inherit;
+}
+
+.path-my #region-main .card-body.pr-1.course-info-container {
+    border-radius: 0px;
+}
+
+// Card
+
+.card {
+    background-color: constants.$card-background-color;
+    border-color: constants.$card-border-color;
+}
+
+.card-header {
+    background-color: #1f1f1f;
+    border-color: constants.$card-border-color;
 }
 
 // Clean page-header (top of home page with logo)
@@ -44,3 +73,159 @@ body {
     }
 }
 
+// Footer
+
+#page-footer {
+    border-radius: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    .fa.fa-phone {
+        visibility: hidden;
+    }
+
+    .contactinfo::before {
+        content: "\A===    Webcampus Dark Theme    ===\AStyle par Martin Danhier et Yannis Fraselle \A Version #{constants.$version} \A \A";
+        white-space: pre;
+        text-align: center;
+        color: constants.$text-color;
+    }
+}
+
+// Block
+
+.block-region {
+    .block {
+        border: unset;
+
+        .card-body {
+            border-radius: 15px;
+            background-color: constants.$block-background-color;
+            box-shadow: 1px 1px 2px 0 constants.$elevation-shadow-color;
+
+            // Title
+            .card-title {
+                color: constants.$block-title-color;
+            }
+            // Icon
+            .card-title:before {
+                color: constants.$block-icon-color;
+            }
+        }
+    }
+}
+
+// Block toggle button position
+
+#blocks-column-toggle {
+    top: 0px;
+    margin-top: 75px;
+}
+
+// Drawer
+
+#nav-drawer {
+    user-select: none;
+    background-color: constants.$block-background-color;
+    border-radius: 15px;
+    height: calc(100vh - 70px);
+    box-shadow: 1px 1px constants.$elevation-shadow-color;
+
+    .list-group {
+        a.list-group-item.active {
+            background-color: #1e4a51;
+            border: 1px solid #1e4a51;
+            border-radius: 15px;
+        }
+
+        div.list-group-item,
+        a.list-group-item {
+            box-shadow: unset;
+            background-color: constants.$block-background-color;
+            border: 1px solid transparent;
+            color: constants.$text-color;
+        }
+
+        div.list-group-item:hover,
+        a.list-group-item:hover {
+            border: 1px solid transparent;
+            border-radius: 10px;
+            background-color: constants.$drawer-hover-color;
+        }
+    }
+}
+
+body.shrinkablenavdrawer #nav-drawer.closed {
+    background-color: constants.$block-background-color;
+}
+
+// Course list
+.list-group-item {
+    background-color: constants.$course-list-background-color;
+    box-shadow: 0.5px 0.5px constants.$elevation-shadow-color;
+    border: unset;
+    color: constants.$course-list-text-color;
+}
+.list-group-item:hover {
+    background-color: constants.$course-list-hover-background-color;
+    color: constants.$course-list-text-color;
+}
+
+// Scroll bars
+
+div::-webkit-scrollbar-thumb,
+section::-webkit-scrollbar-thumb,
+div::-webkit-scrollbar-track,
+section::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+// Elements
+
+h2 {
+    color: constants.$text-color;
+}
+
+a {
+    color: constants.$link-color;
+}
+
+// Generic classes
+.bg-dark {
+    background-color: constants.$darker-background-color !important;
+}
+
+.bg-pulse-grey {
+    animation: unset;
+    background-color: constants.$block-background-color;
+}
+
+.bg-secondary {
+    background-color: constants.$lighter-background-color !important;
+}
+
+.bg-light {
+    background-color: constants.$background-color !important;
+}
+
+.bg-white {
+    background-color: inherit !important;
+}
+
+.border-bottom {
+    border-bottom: 1px solid transparent !important;
+}
+
+// Flashbox
+.flashbox {
+    background: constants.$block-background-color;
+    border-radius: 15px;
+}
+
+.flashbox.warning {
+    border: 2px solid constants.$flashbox-warning-color;
+}
+
+.flashbox.trick {
+    border: 2px solid constants.$flashbox-trick-color;
+}
